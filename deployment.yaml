@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pythonapp
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: pythonapp
+  template:
+    metadata:
+      labels:
+        app: pythonapp
+    spec:
+      containers:
+      - name: container1
+        image: prayag10/pythonapp
+        ports:
+        - containerPort: 4000
+  
