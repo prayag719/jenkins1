@@ -4,6 +4,6 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def root():
-    return "My Python flask app v1.7"
+    return "My Python flask app v1.8"
 
 app.run(host="0.0.0.0", port=4000)
